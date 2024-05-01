@@ -1,0 +1,64 @@
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+ {
+    "nombre": "Yapura Alejandro",
+    "edad" : 18,
+    "email": "ramon123@gmail.com",
+    "cuentadeposito": "0005400278110",
+    "cuit": "2345781245"
+ }
+ 
+###
+GET http://localhost:9000/api/users  HTTP/1.1
+
+###
+GET http://localhost:9000/api/users/662dc1c82b0dafde351d76cf  HTTP/1.1
+
+###
+
+PUT http://localhost:9000/api/users/662dc1c82b0dafde351d76cf  HTTP/1.1
+Content-Type: application/json
+
+ {
+    "name": "lucasvargas",
+    "age" : "282",
+    "email": "aaaa@gmail.com"
+ }
+ 
+###
+DELETE http://localhost:9000/api/users/662dc1c82b0dafde351d76cf HTTP/1.1
+
+###
+// crear stock
+POST http://localhost:9000/api/stock HTTP/1.1
+Content-Type: application/json
+
+{
+   "IP": 456798,
+   "Nombredelproducto": "coca",
+   "existencias": 100,
+   "categoria": "bebidas",
+   "precio": 1400
+}
+
+// get all stock
+###
+
+GET http://localhost:9000/api/stock  HTTP/1.1
+
+###
+
+POST http://localhost:9000/api/proveedores HTTP/1.1
+Content-Type: application/json
+
+{
+   "nombre": "Polo Norte",
+   "telefono": 38164655444,
+   "direccion": "santiago y catamarca",
+   "categoria": "panaderia"
+}
+
+
+ 
